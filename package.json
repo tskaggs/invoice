@@ -1,0 +1,19 @@
+{
+  "name": "invoice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack src/index.js bin/app.js -d --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tim Skaggs",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  }
+}
