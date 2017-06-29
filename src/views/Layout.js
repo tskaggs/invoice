@@ -2,10 +2,8 @@ var m = require("mithril")
 
 module.exports = {
   view: function(vnode) {
-    console.log('vnode', vnode);
     return m(".container", [
       m("button#open-button.menu-button", "Open Menu"),
-
       m(".content-wrap", [
         m(".content", [
           m(".invContainer", vnode.children),
