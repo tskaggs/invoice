@@ -1,18 +1,16 @@
 var m = require("mithril")
 
-// var MyComponent = require("./components/mycomponent")
-//
-// m.mount(document.body, MyComponent)
-
 var UserList = require("./views/UserList")
 var UserForm = require("./views/UserForm")
+
+var Invoice = require("./views/Invoice")
+
 var Layout = require("./views/Layout")
 
-// m.mount(document.body, UserList)
-m.route(document.body, "/list", {
-  "/list": {
+m.route(document.body, "/invoice", {
+  "/invoice": {
     render: function() {
-      return m(Layout, m(UserList))
+      return m(Layout, m(Invoice))
     }
   },
   "/edit/:id": {
